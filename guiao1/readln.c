@@ -33,7 +33,7 @@ ssize_t readln(int fd, char *line, size_t size){
 
 int main(int argc, char* argv[]){
     char line[100];
-    int fd = open("destino.txt", O_RDONLY); 
+    int fd = open("exemplo.txt", O_RDONLY); 
     while(readln(fd, line, 200) > 0){
         printf("%s\n", line);
     }
