@@ -17,6 +17,12 @@ int main(int argc, char*argv[]){
         int idade = atoi(argv[3]);
         atualizar(nome, idade);
     }
+    else if(argc == 4 && strcmp(argv[1], "-U") == 0){
+        //atualizar
+        int idx = atoi(argv[2]);
+        int idade = atoi(argv[3]);
+        atualizar_por_idx(idx, idade);
+    }
     else if(argc == 1){
         mostrar();
     }
